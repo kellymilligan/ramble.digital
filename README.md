@@ -1,17 +1,6 @@
-# Simple ES6 visual development template
+# ramble.digital
 
-__The goal__: To have a dead simple app template to use for visual development prototypes. Pull a copy, start webpack, and start writing code. Not necessarily intended for production use. 
-
----
-
-## Features
-- Frameworkless but with `zepto` and `lodash` as dependencies
-- ES6 transpiling with Babel
-- Simple webpack build setup ( _adapted from [wbkd](https://github.com/wbkd/yet-another-webpack-es6-starterkit)'s great setup._ )
-- Simple prototypal inheritance
-- Base object for common variables, trickling, and hierarchy management
-- Basic SCSS scaffold, including normalize and critical CSS
-- Example modules for generic, matrix transform, 2D canvas, THREE.js, and full-page shader (through THREE.js).
+Simple landing page for Ramble Digital LTD
 
 ---
 
