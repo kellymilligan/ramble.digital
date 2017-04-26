@@ -18,15 +18,23 @@
 
         .name__text {
 
+            margin-bottom: 12rem;
+
             font-family: 'Folty-Medium', sans-serif;
-            font-size: 20rem;
+            font-size: 24rem;
             line-height: 1;
 
+            transform-origin: left top;
             transform: translate3d( 0, 0, 0 ) skew( 0, #{$pi}deg );
 
             opacity: 1;
 
             transition: opacity #{$pi}s $ease-in-cubic;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
 
             &.initially-hidden {
 

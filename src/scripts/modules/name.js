@@ -31,14 +31,14 @@ export default Object.assign( Object.create( BaseObject ), {
     onMouseMove() {
 
         this.skewTarget = Math.PI + Math.PI * 0.5 * this.mouseData.nY;
-        this.xTarget = this.mouseData.nX * this.windowData.width * 0.007;
-        this.yTarget = this.mouseData.nY * this.windowData.height * 0.01;
+        this.xTarget = this.mouseData.nX * this.windowData.width * 0.003;
+        this.yTarget = this.mouseData.nY * this.windowData.height * -0.02;
     },
 
     onAnimFrame() {
 
-        this.xCurrent += ( this.xTarget - this.xCurrent ) * 0.03;
-        this.yCurrent += ( this.yTarget - this.yCurrent ) * 0.03;
+        this.xCurrent += ( this.xTarget - this.xCurrent ) * 0.02;
+        this.yCurrent += ( this.yTarget - this.yCurrent ) * 0.02;
 
         this.skewCurrent += ( this.skewTarget - this.skewCurrent ) * 0.05;
 
