@@ -73,6 +73,9 @@ export default function () {
         // Initial resize
         onResize();
 
+        // Initial mouse position (center of screen)
+        onMouseMove( { clientX: windowData.width * 0.5, clientY: windowData.height * 0.5 } );
+
         // Start anim frame
         _.defer( function () { window.requestAnimationFrame( onAnimFrame ); } );
     }
