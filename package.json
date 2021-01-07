@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --config webpack-prod.config.js --colors",
     "dev": "webpack-dev-server --config webpack-dev.config.js --watch --colors",
-    "host": "webpack-dev-server --config webpack-dev.config.js --watch --colors --host"
+    "host": "webpack-dev-server --config webpack-dev.config.js --watch --colors --host",
+    "netlify": ""
   },
   "eslintConfig": {
     "env": {
