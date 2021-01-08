@@ -291,7 +291,7 @@ ol {
       transform-origin: left top;
       transform: translate3d(0, 0, 0) skew(0, #{$pi}deg);
 
-      transition: opacity #{$pi}s $ease-in-cubic;
+      transition: opacity #{$pi}s $ease-in-out-cubic;
 
       -webkit-user-select: none;
       -moz-user-select: none;
