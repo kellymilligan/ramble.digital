@@ -20,13 +20,13 @@
 */
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3375d9");
+@import url('//hello.myfonts.net/count/3375d9');
 
 @font-face {
-    font-family: 'Folty-Medium';
-    src: url('../fonts/3375D9_0_0.eot');
-    src: url('../fonts/3375D9_0_0.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/3375D9_0_0.woff2') format('woff2'),
-         url('../fonts/3375D9_0_0.woff') format('woff'),
-         url('../fonts/3375D9_0_0.ttf') format('truetype');
+  font-family: 'Folty-Medium';
+  src: url('../fonts/3375D9_0_0.eot');
+  src: url('../fonts/3375D9_0_0.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/3375D9_0_0.woff2') format('woff2'),
+    url('../fonts/3375D9_0_0.woff') format('woff'),
+    url('../fonts/3375D9_0_0.ttf') format('truetype');
 }

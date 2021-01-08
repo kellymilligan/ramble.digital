@@ -5,28 +5,27 @@
 // Mobile
 $bp-mobile-tiny-min: 0;
 $bp-mobile-tiny-max: 320px;
-$bp-mobile-small-min: ( $bp-mobile-tiny-max + 1 );
+$bp-mobile-small-min: ($bp-mobile-tiny-max + 1);
 $bp-mobile-small-max: 360px;
-$bp-mobile-medium-min: ( $bp-mobile-small-max + 1 );
+$bp-mobile-medium-min: ($bp-mobile-small-max + 1);
 $bp-mobile-medium-max: 400px;
-$bp-mobile-large-min: ( $bp-mobile-medium-max + 1 );
+$bp-mobile-large-min: ($bp-mobile-medium-max + 1);
 $bp-mobile-large-max: 599px;
 
 // Tablet
-$bp-tablet-min: ( $bp-mobile-large-max + 1 );
+$bp-tablet-min: ($bp-mobile-large-max + 1);
 $bp-tablet-max: 1024px;
 
 // Dekstop
-$bp-desktop-1280-min: ( $bp-tablet-max + 1 );
+$bp-desktop-1280-min: ($bp-tablet-max + 1);
 $bp-desktop-1280-max: 1280px;
-$bp-desktop-1440-min: ( $bp-desktop-1280-max + 1 );
+$bp-desktop-1440-min: ($bp-desktop-1280-max + 1);
 $bp-desktop-1440-max: 1440px;
-$bp-desktop-1680-min: ( $bp-desktop-1440-max + 1 );
+$bp-desktop-1680-min: ($bp-desktop-1440-max + 1);
 $bp-desktop-1680-max: 1680px;
-$bp-desktop-1920-min: ( $bp-desktop-1680-max + 1 );
+$bp-desktop-1920-min: ($bp-desktop-1680-max + 1);
 $bp-desktop-1920-max: 1920px;
-$bp-desktop-large-min: ( $bp-desktop-1920-max + 1 );
-
+$bp-desktop-large-min: ($bp-desktop-1920-max + 1);
 
 //
 //  These mixins apply styles only when within the specified breakpoint
@@ -45,84 +44,83 @@ $bp-desktop-large-min: ( $bp-desktop-1920-max + 1 );
 //  }
 //
 
-@mixin breakpoint( $point ) {
-
-    // Mobile - all
-    @if $point == mobile-all {
-        @media only screen and (max-width: $bp-mobile-large-max) {
-            @content;
-        }
+@mixin breakpoint($point) {
+  // Mobile - all
+  @if $point == mobile-all {
+    @media only screen and (max-width: $bp-mobile-large-max) {
+      @content;
     }
+  }
 
-    // Mobile - tiny (0 - 320px)
-    @if $point == mobile-tiny {
-        @media only screen and (min-width: $bp-mobile-tiny-min) and (max-width: $bp-mobile-tiny-max) {
-            @content;
-        }
+  // Mobile - tiny (0 - 320px)
+  @if $point == mobile-tiny {
+    @media only screen and (min-width: $bp-mobile-tiny-min) and (max-width: $bp-mobile-tiny-max) {
+      @content;
     }
+  }
 
-    // Mobile - small (321 - 360px)
-    @if $point == mobile-small {
-        @media only screen and (min-width: $bp-mobile-small-min) and (max-width: $bp-mobile-small-max) {
-            @content;
-        }
+  // Mobile - small (321 - 360px)
+  @if $point == mobile-small {
+    @media only screen and (min-width: $bp-mobile-small-min) and (max-width: $bp-mobile-small-max) {
+      @content;
     }
+  }
 
-    // Mobile - medium (361 - 400px)
-    @if $point == mobile-medium {
-        @media only screen and (min-width: $bp-mobile-medium-min) and (max-width: $bp-mobile-medium-max) {
-            @content;
-        }
+  // Mobile - medium (361 - 400px)
+  @if $point == mobile-medium {
+    @media only screen and (min-width: $bp-mobile-medium-min) and (max-width: $bp-mobile-medium-max) {
+      @content;
     }
+  }
 
-    // Mobile - large (401 - 599px)
-    @if $point == mobile-large {
-        @media only screen and (min-width: $bp-mobile-large-min) and (max-width: $bp-mobile-large-max) {
-            @content;
-        }
+  // Mobile - large (401 - 599px)
+  @if $point == mobile-large {
+    @media only screen and (min-width: $bp-mobile-large-min) and (max-width: $bp-mobile-large-max) {
+      @content;
     }
+  }
 
-    // Tablet (600 - 1024px)
-    @if $point == tablet {
-        @media only screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
-            @content;
-        }
+  // Tablet (600 - 1024px)
+  @if $point == tablet {
+    @media only screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+      @content;
     }
+  }
 
-    // Desktop 1024 - 1280
-    @if $point == desktop-1280 {
-        @media only screen and (min-width: $bp-desktop-1280-min) and (max-width: $bp-desktop-1280-max) {
-            @content;
-        }
+  // Desktop 1024 - 1280
+  @if $point == desktop-1280 {
+    @media only screen and (min-width: $bp-desktop-1280-min) and (max-width: $bp-desktop-1280-max) {
+      @content;
     }
+  }
 
-    // Desktop 1280 - 1440
-    @if $point == desktop-1440 {
-        @media only screen and (min-width: $bp-desktop-1440-min) and (max-width: $bp-desktop-1440-max) {
-            @content;
-        }
+  // Desktop 1280 - 1440
+  @if $point == desktop-1440 {
+    @media only screen and (min-width: $bp-desktop-1440-min) and (max-width: $bp-desktop-1440-max) {
+      @content;
     }
+  }
 
-    // Desktop 1440 - 1680
-    @if $point == desktop-1680 {
-        @media only screen and (min-width: $bp-desktop-1680-min) and (max-width: $bp-desktop-1680-max) {
-            @content;
-        }
+  // Desktop 1440 - 1680
+  @if $point == desktop-1680 {
+    @media only screen and (min-width: $bp-desktop-1680-min) and (max-width: $bp-desktop-1680-max) {
+      @content;
     }
+  }
 
-    // Desktop 1680 - 1920
-    @if $point == desktop-1920 {
-        @media only screen and (min-width: $bp-desktop-1920-min) and (max-width: $bp-desktop-1920-max) {
-            @content;
-        }
+  // Desktop 1680 - 1920
+  @if $point == desktop-1920 {
+    @media only screen and (min-width: $bp-desktop-1920-min) and (max-width: $bp-desktop-1920-max) {
+      @content;
     }
+  }
 
-    // Desktop 1920+
-    @if $point == desktop-large {
-        @media only screen and (min-width: $bp-desktop-large-min) {
-            @content;
-        }
+  // Desktop 1920+
+  @if $point == desktop-large {
+    @media only screen and (min-width: $bp-desktop-large-min) {
+      @content;
     }
+  }
 }
 
 //
@@ -143,27 +141,24 @@ $bp-desktop-large-min: ( $bp-desktop-1920-max + 1 );
 //
 
 // Min width and Max width
-@mixin breakpoint-width( $min, $max ) {
-
-    @media only screen and (min-width: $min) and (max-width: $max) {
-        @content;
-    }
+@mixin breakpoint-width($min, $max) {
+  @media only screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
 }
 
 // Min width
-@mixin breakpoint-width-min( $min ) {
-
-    @media only screen and (min-width: $min) {
-        @content;
-    }
+@mixin breakpoint-width-min($min) {
+  @media only screen and (min-width: $min) {
+    @content;
+  }
 }
 
 // Max width
-@mixin breakpoint-width-max( $max ) {
-
-    @media only screen and (max-width: $max) {
-        @content;
-    }
+@mixin breakpoint-width-max($max) {
+  @media only screen and (max-width: $max) {
+    @content;
+  }
 }
 
 //
@@ -184,25 +179,22 @@ $bp-desktop-large-min: ( $bp-desktop-1920-max + 1 );
 //
 
 // Min height and Max height
-@mixin breakpoint-height( $min, $max ) {
-
-    @media only screen and (min-height: $min) and (max-height: $max) {
-        @content;
-    }
+@mixin breakpoint-height($min, $max) {
+  @media only screen and (min-height: $min) and (max-height: $max) {
+    @content;
+  }
 }
 
 // Min height
-@mixin breakpoint-height-min( $min ) {
-
-    @media only screen and (min-height: $min) {
-        @content;
-    }
+@mixin breakpoint-height-min($min) {
+  @media only screen and (min-height: $min) {
+    @content;
+  }
 }
 
 // Max height
-@mixin breakpoint-height-max( $max ) {
-
-    @media only screen and (max-height: $max) {
-        @content;
-    }
+@mixin breakpoint-height-max($max) {
+  @media only screen and (max-height: $max) {
+    @content;
+  }
 }
