@@ -1,2 +1,2 @@
-/ktap/
-    Basic-Auth: ktap/butwaittheresmore
+/ktap/*
+    Basic-Auth: ktap:butwaittheresmore
